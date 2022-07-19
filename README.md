@@ -37,6 +37,10 @@ You can log into test your app using the following user:
 | ------------- | ------------- |
 | test+ios2@moneyboxapp.com  | P455word12  |
 
+#### Authentication
+You should obtain a bearer token from Login response, an Authorization header must be provided for all endpoints. You can figure out and use helper methods in API/Base folder.
+(Note: The BearerToken has a sliding expiration of 5 mins).
+
 #### API Call Hint
 ```
 API.Login.login(request: request).fetchResponse(completion: completion)

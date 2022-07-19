@@ -41,6 +41,10 @@ You can log into test your app using the following user:
 You should obtain a bearer token from Login response, an Authorization header must be provided for all endpoints. You can figure out and use helper methods in API/Base folder.
 (Note: The BearerToken has a sliding expiration of 5 mins).
 
+| Key  |  Value  |
+| ------------- | ------------- |
+| Authorization |  Bearer TsMWRkbrcu3NGrpf84gi2+pg0iOMVymyKklmkY0oI84= |
+
 #### API Call Hint
 ```
 API.Login.login(request: request).fetchResponse(completion: completion)

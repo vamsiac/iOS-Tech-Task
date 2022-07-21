@@ -27,7 +27,7 @@ A prototype wireframe of all 3 screens is provided as a guideline. You are free 
  - Showcase what you can do.
 
 ### API Usage
-You will find the Networking methods and Models for requests and responses ready-made in the project.
+You will find the Networking methods and Models for requests and responses ready-made in Networking module in the project.
 
 #### Base URL & Test User
 The base URL for the moneybox sandbox environment is `https://api-test02.moneyboxapp.com/`. </br>
@@ -46,8 +46,10 @@ You should obtain a bearer token from Login response, an Authorization header mu
 | Authorization |  Bearer TsMWRkbrcu3NGrpf84gi2+pg0iOMVymyKklmkY0oI84= |
 
 #### API Call Hint
+
 ```
-API.Login.login(request: request).fetchResponse(completion: completion)
+let dataProvider = DataProvider()
+dataProvider.login(request: request, completion: completion)
 ```
 request: Initialize your request model </br>
 Completion: Handle your API success and failure cases
@@ -56,10 +58,10 @@ Completion: Handle your API success and failure cases
 The MoneyBoxTests folder includes stubbed data to easily mock the responses needed for unit testing
 
 #### Usage Hint
+You can create a DataProviderMock class via inject DataProviderLogic protocol </br>
+You can mock response in Login.json file like this:
 ```
-func fetchProducts(completion: @escaping ((Result<AccountResponse, Error>) -> Void)) {
-    StubData.read(file: "Accounts", callback: completion)
-}
+StubData.read(file: "Login", callback: completion)
 ```
 
 

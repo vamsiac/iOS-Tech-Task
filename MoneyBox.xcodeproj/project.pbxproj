@@ -9,24 +9,13 @@
 /* Begin PBXBuildFile section */
 		B228EA6B2880B30B00B35F16 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B228EA692880B30B00B35F16 /* LoginViewController.swift */; };
 		B228EA6C2880B30B00B35F16 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B228EA6A2880B30B00B35F16 /* Login.storyboard */; };
-		B256BDEB2885827D00B8116C /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = B256BDEA2885827D00B8116C /* Authentication.swift */; };
-		B256BDED28858B3200B8116C /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B256BDEC28858B3200B8116C /* SessionManager.swift */; };
+		B26EF47828881E7F003BFDF2 /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = B26EF47728881E7F003BFDF2 /* Networking */; };
 		B2CA46CC279350880041B3A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CA46CB279350880041B3A5 /* AppDelegate.swift */; };
 		B2CA46D52793508A0041B3A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2CA46D42793508A0041B3A5 /* Assets.xcassets */; };
 		B2CA46D82793508A0041B3A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2CA46D62793508A0041B3A5 /* LaunchScreen.storyboard */; };
-		B2CA4725279368320041B3A5 /* AppNetworkable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CA4721279368320041B3A5 /* AppNetworkable.swift */; };
-		B2CA4728279368320041B3A5 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CA4724279368320041B3A5 /* API.swift */; };
-		B2CA473127936A030041B3A5 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CA473027936A030041B3A5 /* Login.swift */; };
-		B2CA473627936EF80041B3A5 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CA473527936EF80041B3A5 /* LoginRequest.swift */; };
-		B2CA473827936F000041B3A5 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CA473727936F000041B3A5 /* LoginResponse.swift */; };
-		B2CA475D279385E30041B3A5 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CA475C279385E30041B3A5 /* ErrorResponse.swift */; };
 		B2CA47672794D69A0041B3A5 /* StubData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CA47662794D69A0041B3A5 /* StubData.swift */; };
 		B2CA47712794D8E50041B3A5 /* LoginSucceed.json in Resources */ = {isa = PBXBuildFile; fileRef = B2CA47692794D6D70041B3A5 /* LoginSucceed.json */; };
-		B2CA47922794E76A0041B3A5 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CA47912794E76A0041B3A5 /* Account.swift */; };
-		B2CA47942794E8760041B3A5 /* AccountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CA47932794E8760041B3A5 /* AccountResponse.swift */; };
 		B2CA47B42796052F0041B3A5 /* Accounts.json in Resources */ = {isa = PBXBuildFile; fileRef = B2CA47B2279604A10041B3A5 /* Accounts.json */; };
-		B2CA47C8279614F30041B3A5 /* OneOffPaymentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CA47C7279614F30041B3A5 /* OneOffPaymentRequest.swift */; };
-		B2CA47CA279616B70041B3A5 /* OneOffPaymentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CA47C9279616B70041B3A5 /* OneOffPaymentResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,27 +31,16 @@
 /* Begin PBXFileReference section */
 		B228EA692880B30B00B35F16 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B228EA6A2880B30B00B35F16 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
-		B256BDEA2885827D00B8116C /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
-		B256BDEC28858B3200B8116C /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		B26EF48128882430003BFDF2 /* Networking */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Networking; path = ../Networking; sourceTree = "<group>"; };
 		B2CA46C8279350880041B3A5 /* MoneyBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2CA46CB279350880041B3A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2CA46D42793508A0041B3A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2CA46D72793508A0041B3A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2CA46D92793508A0041B3A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2CA46DE2793508A0041B3A5 /* MoneyBoxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoneyBoxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B2CA4721279368320041B3A5 /* AppNetworkable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppNetworkable.swift; path = MoneyBox/API/Base/AppNetworkable.swift; sourceTree = SOURCE_ROOT; };
-		B2CA4724279368320041B3A5 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = API.swift; path = MoneyBox/API/Base/API.swift; sourceTree = SOURCE_ROOT; };
-		B2CA473027936A030041B3A5 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
-		B2CA473527936EF80041B3A5 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
-		B2CA473727936F000041B3A5 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
-		B2CA475C279385E30041B3A5 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
 		B2CA47662794D69A0041B3A5 /* StubData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubData.swift; sourceTree = "<group>"; };
 		B2CA47692794D6D70041B3A5 /* LoginSucceed.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LoginSucceed.json; sourceTree = "<group>"; };
-		B2CA47912794E76A0041B3A5 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
-		B2CA47932794E8760041B3A5 /* AccountResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountResponse.swift; sourceTree = "<group>"; };
 		B2CA47B2279604A10041B3A5 /* Accounts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Accounts.json; sourceTree = "<group>"; };
-		B2CA47C7279614F30041B3A5 /* OneOffPaymentRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneOffPaymentRequest.swift; sourceTree = "<group>"; };
-		B2CA47C9279616B70041B3A5 /* OneOffPaymentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneOffPaymentResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B26EF47828881E7F003BFDF2 /* Networking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,18 +62,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B228EA682880B2CE00B35F16 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				B228EA6A2880B30B00B35F16 /* Login.storyboard */,
-				B228EA692880B30B00B35F16 /* LoginViewController.swift */,
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
 		B2CA46BF279350880041B3A5 = {
 			isa = PBXGroup;
 			children = (
+				B2DEEA31288818470030A8F2 /* Packages */,
 				B2CA46CA279350880041B3A5 /* MoneyBox */,
 				B2CA46E12793508A0041B3A5 /* MoneyBoxTests */,
 				B2CA46C9279350880041B3A5 /* Products */,
@@ -113,8 +84,8 @@
 		B2CA46CA279350880041B3A5 /* MoneyBox */ = {
 			isa = PBXGroup;
 			children = (
-				B228EA682880B2CE00B35F16 /* Login */,
-				B2CA47202793680E0041B3A5 /* API */,
+				B228EA6A2880B30B00B35F16 /* Login.storyboard */,
+				B228EA692880B30B00B35F16 /* LoginViewController.swift */,
 				B2CA46CB279350880041B3A5 /* AppDelegate.swift */,
 				B2CA46D42793508A0041B3A5 /* Assets.xcassets */,
 				B2CA46D62793508A0041B3A5 /* LaunchScreen.storyboard */,
@@ -126,60 +97,10 @@
 		B2CA46E12793508A0041B3A5 /* MoneyBoxTests */ = {
 			isa = PBXGroup;
 			children = (
-				B2CA47682794D6AC0041B3A5 /* ResponseJsons */,
 				B2CA47662794D69A0041B3A5 /* StubData.swift */,
+				B2CA47682794D6AC0041B3A5 /* ResponseJsons */,
 			);
 			path = MoneyBoxTests;
-			sourceTree = "<group>";
-		};
-		B2CA47202793680E0041B3A5 /* API */ = {
-			isa = PBXGroup;
-			children = (
-				B2CA473427936EE90041B3A5 /* Base */,
-				B2CA472F279369F90041B3A5 /* Router */,
-				B2E1EEFA287CDD1700AF70E8 /* Models */,
-			);
-			path = API;
-			sourceTree = "<group>";
-		};
-		B2CA472F279369F90041B3A5 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				B2CA473027936A030041B3A5 /* Login.swift */,
-				B2CA47912794E76A0041B3A5 /* Account.swift */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
-		B2CA473227936EC50041B3A5 /* Request */ = {
-			isa = PBXGroup;
-			children = (
-				B2CA473527936EF80041B3A5 /* LoginRequest.swift */,
-				B2CA47C7279614F30041B3A5 /* OneOffPaymentRequest.swift */,
-			);
-			path = Request;
-			sourceTree = "<group>";
-		};
-		B2CA473327936ECC0041B3A5 /* Response */ = {
-			isa = PBXGroup;
-			children = (
-				B2CA473727936F000041B3A5 /* LoginResponse.swift */,
-				B2CA475C279385E30041B3A5 /* ErrorResponse.swift */,
-				B2CA47932794E8760041B3A5 /* AccountResponse.swift */,
-				B2CA47C9279616B70041B3A5 /* OneOffPaymentResponse.swift */,
-			);
-			path = Response;
-			sourceTree = "<group>";
-		};
-		B2CA473427936EE90041B3A5 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				B2CA4724279368320041B3A5 /* API.swift */,
-				B2CA4721279368320041B3A5 /* AppNetworkable.swift */,
-				B256BDEA2885827D00B8116C /* Authentication.swift */,
-				B256BDEC28858B3200B8116C /* SessionManager.swift */,
-			);
-			path = Base;
 			sourceTree = "<group>";
 		};
 		B2CA47682794D6AC0041B3A5 /* ResponseJsons */ = {
@@ -191,13 +112,12 @@
 			path = ResponseJsons;
 			sourceTree = "<group>";
 		};
-		B2E1EEFA287CDD1700AF70E8 /* Models */ = {
+		B2DEEA31288818470030A8F2 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				B2CA473227936EC50041B3A5 /* Request */,
-				B2CA473327936ECC0041B3A5 /* Response */,
+				B26EF48128882430003BFDF2 /* Networking */,
 			);
-			path = Models;
+			name = Packages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +137,7 @@
 			);
 			name = MoneyBox;
 			packageProductDependencies = (
+				B26EF47728881E7F003BFDF2 /* Networking */,
 			);
 			productName = MoneyBox;
 			productReference = B2CA46C8279350880041B3A5 /* MoneyBox.app */;
@@ -307,20 +228,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2CA4725279368320041B3A5 /* AppNetworkable.swift in Sources */,
 				B2CA46CC279350880041B3A5 /* AppDelegate.swift in Sources */,
-				B2CA473627936EF80041B3A5 /* LoginRequest.swift in Sources */,
-				B2CA47942794E8760041B3A5 /* AccountResponse.swift in Sources */,
-				B2CA47C8279614F30041B3A5 /* OneOffPaymentRequest.swift in Sources */,
-				B2CA47CA279616B70041B3A5 /* OneOffPaymentResponse.swift in Sources */,
-				B256BDEB2885827D00B8116C /* Authentication.swift in Sources */,
-				B2CA475D279385E30041B3A5 /* ErrorResponse.swift in Sources */,
-				B2CA473127936A030041B3A5 /* Login.swift in Sources */,
 				B228EA6B2880B30B00B35F16 /* LoginViewController.swift in Sources */,
-				B2CA473827936F000041B3A5 /* LoginResponse.swift in Sources */,
-				B2CA47922794E76A0041B3A5 /* Account.swift in Sources */,
-				B256BDED28858B3200B8116C /* SessionManager.swift in Sources */,
-				B2CA4728279368320041B3A5 /* API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,7 +314,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -460,7 +369,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -599,6 +508,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B26EF47728881E7F003BFDF2 /* Networking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Networking;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B2CA46C0279350880041B3A5 /* Project object */;
 }

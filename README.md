@@ -27,18 +27,18 @@ A prototype wireframe of all 3 screens is provided as a guideline. You are free 
  - Showcase what you can do.
 
 ### API Usage
-You will find the Networking methods and Models for requests and responses ready-made in Networking module in the project.
+The Networking methods and Models for requests and responses are ready-made in the Networking module of the project.
 
 #### Base URL & Test User
 The base URL for the moneybox sandbox environment is `https://api-test02.moneyboxapp.com/`. </br>
-You can log into test your app using the following user:
+You can log in using the following user:
 
 |  Username          | Password         |
 | ------------- | ------------- |
 | test+ios2@moneyboxapp.com  | P455word12  |
 
 #### Authentication
-You should obtain a bearer token from Login response, an Authorization header must be provided for all endpoints. You can figure out and use helper methods in API/Base folder.
+You should obtain a bearer token from the Login response, and attach it as an Authorization header for the endpoints. Helper methods in the API/Base folder should be used for that.
 (Note: The BearerToken has a sliding expiration of 5 mins).
 
 | Key  |  Value  |
@@ -63,7 +63,6 @@ You can mock response in Login.json file like this:
 ```
 StubData.read(file: "Login", callback: completion)
 ```
-
 
 ### How to Submit your solution:
  - To share your Github repository with the user valerio-bettini.

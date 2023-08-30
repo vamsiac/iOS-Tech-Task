@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nxe-uw-h5I">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nxe-uw-h5I">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,32 +18,107 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GOOD LUCK!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7OK-Xi-XJN">
-                                <rect key="frame" x="154" y="438" width="106" height="20.5"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" name="AccentColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="93" translatesAutoresizingMaskIntoConstraints="NO" id="MTW-Ka-6gp">
+                                <rect key="frame" x="44" y="92" width="326" height="285.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moneybox" translatesAutoresizingMaskIntoConstraints="NO" id="XC4-5b-1ld">
+                                        <rect key="frame" x="0.0" y="0.0" width="326" height="70"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="ih0-6v-3RG">
+                                        <rect key="frame" x="0.0" y="163" width="326" height="122.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RRB-L2-TPP">
+                                                <rect key="frame" x="0.0" y="0.0" width="326" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9dv-6A-VnZ">
+                                                <rect key="frame" x="0.0" y="37.5" width="326" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f0d-J9-RyX">
+                                                <rect key="frame" x="0.0" y="88.5" width="326" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="XC4-5b-1ld" secondAttribute="trailing" id="oan-Fv-h3T"/>
+                                    <constraint firstAttribute="trailing" secondItem="ih0-6v-3RG" secondAttribute="trailing" id="qNg-bJ-g1T"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvo-eW-IjJ">
+                                <rect key="frame" x="174" y="416" width="66" height="34.5"/>
+                                <color key="tintColor" name="AccentColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Login"/>
+                                <connections>
+                                    <action selector="loginButtonTapped:" destination="nxe-uw-h5I" eventType="touchUpInside" id="nrF-a4-oaV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="acR-sl-ate"/>
                         <color key="backgroundColor" name="GreyColor"/>
                         <constraints>
-                            <constraint firstItem="7OK-Xi-XJN" firstAttribute="centerY" secondItem="chM-je-gA4" secondAttribute="centerY" id="Dju-5I-EOs"/>
-                            <constraint firstItem="7OK-Xi-XJN" firstAttribute="centerX" secondItem="chM-je-gA4" secondAttribute="centerX" id="Fmx-0t-JJY"/>
+                            <constraint firstItem="pvo-eW-IjJ" firstAttribute="centerX" secondItem="acR-sl-ate" secondAttribute="centerX" id="9OP-TV-BHK"/>
+                            <constraint firstItem="MTW-Ka-6gp" firstAttribute="top" secondItem="acR-sl-ate" secondAttribute="top" constant="44" id="EGp-Mj-54y"/>
+                            <constraint firstItem="acR-sl-ate" firstAttribute="trailing" secondItem="MTW-Ka-6gp" secondAttribute="trailing" constant="44" id="G7Z-oy-X5y"/>
+                            <constraint firstItem="pvo-eW-IjJ" firstAttribute="top" secondItem="MTW-Ka-6gp" secondAttribute="bottom" constant="38.5" id="PWm-IK-Bat"/>
+                            <constraint firstItem="MTW-Ka-6gp" firstAttribute="leading" secondItem="acR-sl-ate" secondAttribute="leading" constant="44" id="bhl-wy-6cC"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="passwordTextField" destination="f0d-J9-RyX" id="AES-kC-Vhi"/>
+                        <outlet property="usernameTextField" destination="9dv-6A-VnZ" id="RQe-Vu-ZKY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cZo-gs-e4f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="107" y="28"/>
+            <point key="canvasLocation" x="105.79710144927537" y="27.455357142857142"/>
+        </scene>
+        <!--Accounts View Controller-->
+        <scene sceneID="dXp-26-0pW">
+            <objects>
+                <tableViewController id="s4D-qA-Zo4" customClass="AccountsViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="3fI-hb-DJu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Jcu-SH-Gem">
+                                <rect key="frame" x="0.0" y="50" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jcu-SH-Gem" id="pG4-kQ-lEC">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="s4D-qA-Zo4" id="jNx-yL-Eon"/>
+                            <outlet property="delegate" destination="s4D-qA-Zo4" id="7QU-b9-Bxq"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kPn-MV-2QD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="967" y="27"/>
         </scene>
     </scenes>
     <resources>
+        <image name="moneybox" width="300" height="70"/>
         <namedColor name="AccentColor">
             <color red="0.34299999475479126" green="0.75" blue="0.70999997854232788" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="GreyColor">
             <color red="0.94900000095367432" green="0.94900000095367432" blue="0.94900000095367432" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

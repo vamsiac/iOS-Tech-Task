@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33F486E52A9F63210046A522 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F486E42A9F63210046A522 /* LoginViewModel.swift */; };
+		33F486E72A9F69550046A522 /* AccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F486E62A9F69550046A522 /* AccountsViewController.swift */; };
+		33F486E92A9F74F80046A522 /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F486E82A9F74F80046A522 /* LoginViewModelTests.swift */; };
+		33F486EC2A9F761A0046A522 /* DataProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F486EB2A9F761A0046A522 /* DataProviderMock.swift */; };
 		B228EA6B2880B30B00B35F16 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B228EA692880B30B00B35F16 /* LoginViewController.swift */; };
 		B228EA6C2880B30B00B35F16 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B228EA6A2880B30B00B35F16 /* Login.storyboard */; };
 		B26EF47828881E7F003BFDF2 /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = B26EF47728881E7F003BFDF2 /* Networking */; };
@@ -29,6 +33,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		33F486E42A9F63210046A522 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		33F486E62A9F69550046A522 /* AccountsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewController.swift; sourceTree = "<group>"; };
+		33F486E82A9F74F80046A522 /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
+		33F486EB2A9F761A0046A522 /* DataProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderMock.swift; sourceTree = "<group>"; };
 		B228EA692880B30B00B35F16 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B228EA6A2880B30B00B35F16 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		B24EED92288ED5740016C233 /* Networking */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Networking; sourceTree = "<group>"; };
@@ -62,6 +70,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33F486EA2A9F760B0046A522 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				33F486EB2A9F761A0046A522 /* DataProviderMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		B2CA46BF279350880041B3A5 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +102,8 @@
 			children = (
 				B228EA6A2880B30B00B35F16 /* Login.storyboard */,
 				B228EA692880B30B00B35F16 /* LoginViewController.swift */,
+				33F486E42A9F63210046A522 /* LoginViewModel.swift */,
+				33F486E62A9F69550046A522 /* AccountsViewController.swift */,
 				B2CA46CB279350880041B3A5 /* AppDelegate.swift */,
 				B2CA46D42793508A0041B3A5 /* Assets.xcassets */,
 				B2CA46D62793508A0041B3A5 /* LaunchScreen.storyboard */,
@@ -97,7 +115,9 @@
 		B2CA46E12793508A0041B3A5 /* MoneyBoxTests */ = {
 			isa = PBXGroup;
 			children = (
+				33F486EA2A9F760B0046A522 /* Mocks */,
 				B2CA47662794D69A0041B3A5 /* StubData.swift */,
+				33F486E82A9F74F80046A522 /* LoginViewModelTests.swift */,
 				B2CA47682794D6AC0041B3A5 /* ResponseJsons */,
 			);
 			path = MoneyBoxTests;
@@ -230,6 +250,8 @@
 			files = (
 				B2CA46CC279350880041B3A5 /* AppDelegate.swift in Sources */,
 				B228EA6B2880B30B00B35F16 /* LoginViewController.swift in Sources */,
+				33F486E72A9F69550046A522 /* AccountsViewController.swift in Sources */,
+				33F486E52A9F63210046A522 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,7 +259,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33F486E92A9F74F80046A522 /* LoginViewModelTests.swift in Sources */,
 				B2CA47672794D69A0041B3A5 /* StubData.swift in Sources */,
+				33F486EC2A9F761A0046A522 /* DataProviderMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,6 +11,14 @@
 		33F486E72A9F69550046A522 /* AccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F486E62A9F69550046A522 /* AccountsViewController.swift */; };
 		33F486E92A9F74F80046A522 /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F486E82A9F74F80046A522 /* LoginViewModelTests.swift */; };
 		33F486EC2A9F761A0046A522 /* DataProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F486EB2A9F761A0046A522 /* DataProviderMock.swift */; };
+		33F486F02A9F7A310046A522 /* AccountsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F486EF2A9F7A310046A522 /* AccountsViewModel.swift */; };
+		33F486F22A9F7FD40046A522 /* AccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F486F12A9F7FD40046A522 /* AccountTableViewCell.swift */; };
+		33F486F42A9F82110046A522 /* AccountTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F486F32A9F82110046A522 /* AccountTableViewCellModel.swift */; };
+		33F486F72A9F90C00046A522 /* Double+Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F486F62A9F90C00046A522 /* Double+Currency.swift */; };
+		33F486F92A9F9D170046A522 /* AccountsTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F486F82A9F9D170046A522 /* AccountsTableViewHeader.swift */; };
+		33F486FB2A9FA45E0046A522 /* AccountsTableViewHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F486FA2A9FA45E0046A522 /* AccountsTableViewHeaderViewModel.swift */; };
+		33F486FD2A9FAD2E0046A522 /* AccountsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F486FC2A9FAD2E0046A522 /* AccountsViewModelTests.swift */; };
+		33F486FF2A9FAFE10046A522 /* AccountResponseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F486FE2A9FAFE10046A522 /* AccountResponseMock.swift */; };
 		B228EA6B2880B30B00B35F16 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B228EA692880B30B00B35F16 /* LoginViewController.swift */; };
 		B228EA6C2880B30B00B35F16 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B228EA6A2880B30B00B35F16 /* Login.storyboard */; };
 		B26EF47828881E7F003BFDF2 /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = B26EF47728881E7F003BFDF2 /* Networking */; };
@@ -37,6 +45,14 @@
 		33F486E62A9F69550046A522 /* AccountsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewController.swift; sourceTree = "<group>"; };
 		33F486E82A9F74F80046A522 /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
 		33F486EB2A9F761A0046A522 /* DataProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderMock.swift; sourceTree = "<group>"; };
+		33F486EF2A9F7A310046A522 /* AccountsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewModel.swift; sourceTree = "<group>"; };
+		33F486F12A9F7FD40046A522 /* AccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewCell.swift; sourceTree = "<group>"; };
+		33F486F32A9F82110046A522 /* AccountTableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewCellModel.swift; sourceTree = "<group>"; };
+		33F486F62A9F90C00046A522 /* Double+Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Currency.swift"; sourceTree = "<group>"; };
+		33F486F82A9F9D170046A522 /* AccountsTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsTableViewHeader.swift; sourceTree = "<group>"; };
+		33F486FA2A9FA45E0046A522 /* AccountsTableViewHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsTableViewHeaderViewModel.swift; sourceTree = "<group>"; };
+		33F486FC2A9FAD2E0046A522 /* AccountsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewModelTests.swift; sourceTree = "<group>"; };
+		33F486FE2A9FAFE10046A522 /* AccountResponseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountResponseMock.swift; sourceTree = "<group>"; };
 		B228EA692880B30B00B35F16 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B228EA6A2880B30B00B35F16 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		B24EED92288ED5740016C233 /* Networking */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Networking; sourceTree = "<group>"; };
@@ -74,8 +90,39 @@
 			isa = PBXGroup;
 			children = (
 				33F486EB2A9F761A0046A522 /* DataProviderMock.swift */,
+				33F486FE2A9FAFE10046A522 /* AccountResponseMock.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		33F486ED2A9F79C90046A522 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B228EA692880B30B00B35F16 /* LoginViewController.swift */,
+				33F486E42A9F63210046A522 /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		33F486EE2A9F79D10046A522 /* Accounts */ = {
+			isa = PBXGroup;
+			children = (
+				33F486F82A9F9D170046A522 /* AccountsTableViewHeader.swift */,
+				33F486FA2A9FA45E0046A522 /* AccountsTableViewHeaderViewModel.swift */,
+				33F486F12A9F7FD40046A522 /* AccountTableViewCell.swift */,
+				33F486F32A9F82110046A522 /* AccountTableViewCellModel.swift */,
+				33F486E62A9F69550046A522 /* AccountsViewController.swift */,
+				33F486EF2A9F7A310046A522 /* AccountsViewModel.swift */,
+			);
+			path = Accounts;
+			sourceTree = "<group>";
+		};
+		33F486F52A9F90AB0046A522 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				33F486F62A9F90C00046A522 /* Double+Currency.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		B2CA46BF279350880041B3A5 = {
@@ -100,10 +147,10 @@
 		B2CA46CA279350880041B3A5 /* MoneyBox */ = {
 			isa = PBXGroup;
 			children = (
+				33F486F52A9F90AB0046A522 /* Extensions */,
 				B228EA6A2880B30B00B35F16 /* Login.storyboard */,
-				B228EA692880B30B00B35F16 /* LoginViewController.swift */,
-				33F486E42A9F63210046A522 /* LoginViewModel.swift */,
-				33F486E62A9F69550046A522 /* AccountsViewController.swift */,
+				33F486EE2A9F79D10046A522 /* Accounts */,
+				33F486ED2A9F79C90046A522 /* Login */,
 				B2CA46CB279350880041B3A5 /* AppDelegate.swift */,
 				B2CA46D42793508A0041B3A5 /* Assets.xcassets */,
 				B2CA46D62793508A0041B3A5 /* LaunchScreen.storyboard */,
@@ -118,6 +165,7 @@
 				33F486EA2A9F760B0046A522 /* Mocks */,
 				B2CA47662794D69A0041B3A5 /* StubData.swift */,
 				33F486E82A9F74F80046A522 /* LoginViewModelTests.swift */,
+				33F486FC2A9FAD2E0046A522 /* AccountsViewModelTests.swift */,
 				B2CA47682794D6AC0041B3A5 /* ResponseJsons */,
 			);
 			path = MoneyBoxTests;
@@ -248,8 +296,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33F486F02A9F7A310046A522 /* AccountsViewModel.swift in Sources */,
+				33F486F42A9F82110046A522 /* AccountTableViewCellModel.swift in Sources */,
 				B2CA46CC279350880041B3A5 /* AppDelegate.swift in Sources */,
 				B228EA6B2880B30B00B35F16 /* LoginViewController.swift in Sources */,
+				33F486F22A9F7FD40046A522 /* AccountTableViewCell.swift in Sources */,
+				33F486FB2A9FA45E0046A522 /* AccountsTableViewHeaderViewModel.swift in Sources */,
+				33F486F72A9F90C00046A522 /* Double+Currency.swift in Sources */,
+				33F486F92A9F9D170046A522 /* AccountsTableViewHeader.swift in Sources */,
 				33F486E72A9F69550046A522 /* AccountsViewController.swift in Sources */,
 				33F486E52A9F63210046A522 /* LoginViewModel.swift in Sources */,
 			);
@@ -260,7 +314,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				33F486E92A9F74F80046A522 /* LoginViewModelTests.swift in Sources */,
+				33F486FF2A9FAFE10046A522 /* AccountResponseMock.swift in Sources */,
 				B2CA47672794D69A0041B3A5 /* StubData.swift in Sources */,
+				33F486FD2A9FAD2E0046A522 /* AccountsViewModelTests.swift in Sources */,
 				33F486EC2A9F761A0046A522 /* DataProviderMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

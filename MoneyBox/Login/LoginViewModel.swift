@@ -9,19 +9,21 @@ import Foundation
 import Networking
 
 protocol LoginViewModelDelegate: AnyObject {
-	func userSuccessfullyLoggedIn()
+	func successfullyLoggedIn(with user: LoginResponse.User)
 	func userFailedToLogin(with error: Error)
 }
 
 class LoginViewModel {
 	
-	weak var delegate: LoginViewModelDelegate!
+	weak var delegate: LoginViewModelDelegate?
 	
 	private let dataProvider: DataProviderLogic
 	
 	init(
+		delegate: LoginViewModelDelegate?,
 		dataProvider: DataProviderLogic = DataProvider()
 	) {
+		self.delegate = delegate
 		self.dataProvider = dataProvider
 	}
 	
@@ -32,10 +34,11 @@ class LoginViewModel {
 				password: password)
 		) { [weak self] result in
 			switch result {
-				case .success(_):
-					self?.delegate.userSuccessfullyLoggedIn()
+				case .success(let loginResponse):
+					Authentication.token = loginResponse.session.bearerToken
+					self?.delegate?.successfullyLoggedIn(with: loginResponse.user)
 				case .failure(let failure):
-					self?.delegate.userFailedToLogin(with: failure)
+					self?.delegate?.userFailedToLogin(with: failure)
 			}
 		}
 	}

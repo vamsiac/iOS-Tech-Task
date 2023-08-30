@@ -6,6 +6,7 @@
 //
 
 import XCTest
+import Networking
 @testable import MoneyBox
 
 class LoginViewModelTests: XCTestCase {
@@ -15,21 +16,24 @@ class LoginViewModelTests: XCTestCase {
 	
 	override func setUp() {
 		super.setUp()
-		sut = LoginViewModel(dataProvider: DataProviderMock())
+		sut = LoginViewModel(
+			delegate: mockViewController,
+			dataProvider: DataProviderMock())
 		sut.delegate = mockViewController
 	}
 	
 	func test_startLogin_whenValidResponse_shouldCallUserSuccessfullyLoggedIn() {
 		XCTAssertTrue(mockViewController.calledFunctions.isEmpty)
 		sut.startLogin(with: "username", password: "password")
-		XCTAssertTrue(mockViewController.calledFunctions.contains("userSuccessfullyLoggedIn()"))
+		XCTAssertTrue(mockViewController.calledFunctions.contains("successfullyLoggedIn(with:)"))
 	}
 }
 
 extension LoginViewModelTests {
 	class MockViewController: LoginViewModelDelegate {
 		var calledFunctions: [String] = []
-		func userSuccessfullyLoggedIn() {
+		
+		func successfullyLoggedIn(with user: LoginResponse.User) {
 			calledFunctions.append(#function)
 		}
 		

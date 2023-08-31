@@ -1,6 +1,25 @@
 
 # Moneybox iOS Technical Challenge
 
+### What we are looking for
+ - Demonstration of coding style, conventions and patterns.✅
+ - Use of autolayout (preferably UIKit).✅
+ - Implementation of unit tests.✅
+ - Any accessibility feature would be a bonus.
+ - The application must run on iOS 13 or later.✅
+ - The application must compile and run on Xcode and be debugged in Xcode's iOS simulator.✅
+ - Any 3rd party library should be integrated using Swift Package Manager. N/A
+ - No persistence of the user is required.✅
+ - Showcase what you can do.✅
+ 
+ ### Approach
+ - Used Xcode 14.2 to implement the features.
+ - MVVM pattern, UIKit for UI are used.
+ - Deployment target is iOS 13
+ - All the view models are thoroughly tested.
+ - Want to use diffable datasources for tableView but decided not to make any changes in networking module. So used a traditional datasource approach.
+ - No external libraries were used.
+
 ## The Brief
 
 To create a 'light' version of the Moneybox app that will allow existing users to login and check their account balance, as well as viewing their Moneybox savings. 

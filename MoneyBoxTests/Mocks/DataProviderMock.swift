@@ -17,5 +17,7 @@ class DataProviderMock: DataProviderLogic {
 		StubData.read(file: "Accounts", callback: completion)
 	}
 	
-	func addMoney(request: Networking.OneOffPaymentRequest, completion: @escaping ((Result<Networking.OneOffPaymentResponse, Error>) -> Void)) {}
+	func addMoney(request: Networking.OneOffPaymentRequest, completion: @escaping ((Result<Networking.OneOffPaymentResponse, Error>) -> Void)) {
+		StubData.read(file: "Added10Pounds", callback: completion)
+	}
 }

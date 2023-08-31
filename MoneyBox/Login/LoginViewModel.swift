@@ -14,9 +14,11 @@ protocol LoginViewModelDelegate: AnyObject {
 }
 
 class LoginViewModel {
+	// MARK: - Properties -
 	
-	weak var delegate: LoginViewModelDelegate?
-	
+	// MARK: Private
+
+	private weak var delegate: LoginViewModelDelegate?
 	private let dataProvider: DataProviderLogic
 	
 	init(
@@ -26,6 +28,8 @@ class LoginViewModel {
 		self.delegate = delegate
 		self.dataProvider = dataProvider
 	}
+	
+	// MARK: - Functions -
 	
 	func startLogin(with email: String, password: String) {
 		dataProvider.login(

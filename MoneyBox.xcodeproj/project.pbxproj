@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		339E5DF82AA0A63400F374BB /* AccountDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339E5DF72AA0A63400F374BB /* AccountDetailViewModelTests.swift */; };
+		339E5DFB2AA0AA3200F374BB /* Added10Pounds.json in Resources */ = {isa = PBXBuildFile; fileRef = 339E5DF92AA0A8DE00F374BB /* Added10Pounds.json */; };
 		33F486E52A9F63210046A522 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F486E42A9F63210046A522 /* LoginViewModel.swift */; };
 		33F486E72A9F69550046A522 /* AccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F486E62A9F69550046A522 /* AccountsViewController.swift */; };
 		33F486E92A9F74F80046A522 /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F486E82A9F74F80046A522 /* LoginViewModelTests.swift */; };
@@ -19,8 +21,10 @@
 		33F486FB2A9FA45E0046A522 /* AccountsTableViewHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F486FA2A9FA45E0046A522 /* AccountsTableViewHeaderViewModel.swift */; };
 		33F486FD2A9FAD2E0046A522 /* AccountsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F486FC2A9FAD2E0046A522 /* AccountsViewModelTests.swift */; };
 		33F486FF2A9FAFE10046A522 /* AccountResponseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F486FE2A9FAFE10046A522 /* AccountResponseMock.swift */; };
+		33F487022A9FB6EB0046A522 /* AccountDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F487012A9FB6EB0046A522 /* AccountDetailViewController.swift */; };
+		33F487042A9FB9960046A522 /* AccountDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F487032A9FB9960046A522 /* AccountDetailViewModel.swift */; };
 		B228EA6B2880B30B00B35F16 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B228EA692880B30B00B35F16 /* LoginViewController.swift */; };
-		B228EA6C2880B30B00B35F16 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B228EA6A2880B30B00B35F16 /* Login.storyboard */; };
+		B228EA6C2880B30B00B35F16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B228EA6A2880B30B00B35F16 /* Main.storyboard */; };
 		B26EF47828881E7F003BFDF2 /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = B26EF47728881E7F003BFDF2 /* Networking */; };
 		B2CA46CC279350880041B3A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CA46CB279350880041B3A5 /* AppDelegate.swift */; };
 		B2CA46D52793508A0041B3A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2CA46D42793508A0041B3A5 /* Assets.xcassets */; };
@@ -41,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		339E5DF72AA0A63400F374BB /* AccountDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailViewModelTests.swift; sourceTree = "<group>"; };
+		339E5DF92AA0A8DE00F374BB /* Added10Pounds.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Added10Pounds.json; sourceTree = "<group>"; };
 		33F486E42A9F63210046A522 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		33F486E62A9F69550046A522 /* AccountsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewController.swift; sourceTree = "<group>"; };
 		33F486E82A9F74F80046A522 /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
@@ -53,8 +59,10 @@
 		33F486FA2A9FA45E0046A522 /* AccountsTableViewHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsTableViewHeaderViewModel.swift; sourceTree = "<group>"; };
 		33F486FC2A9FAD2E0046A522 /* AccountsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewModelTests.swift; sourceTree = "<group>"; };
 		33F486FE2A9FAFE10046A522 /* AccountResponseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountResponseMock.swift; sourceTree = "<group>"; };
+		33F487012A9FB6EB0046A522 /* AccountDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailViewController.swift; sourceTree = "<group>"; };
+		33F487032A9FB9960046A522 /* AccountDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailViewModel.swift; sourceTree = "<group>"; };
 		B228EA692880B30B00B35F16 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		B228EA6A2880B30B00B35F16 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		B228EA6A2880B30B00B35F16 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B24EED92288ED5740016C233 /* Networking */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Networking; sourceTree = "<group>"; };
 		B2CA46C8279350880041B3A5 /* MoneyBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2CA46CB279350880041B3A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +133,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		33F487002A9FB6AB0046A522 /* AccountDetail */ = {
+			isa = PBXGroup;
+			children = (
+				33F487012A9FB6EB0046A522 /* AccountDetailViewController.swift */,
+				33F487032A9FB9960046A522 /* AccountDetailViewModel.swift */,
+			);
+			path = AccountDetail;
+			sourceTree = "<group>";
+		};
 		B2CA46BF279350880041B3A5 = {
 			isa = PBXGroup;
 			children = (
@@ -147,10 +164,11 @@
 		B2CA46CA279350880041B3A5 /* MoneyBox */ = {
 			isa = PBXGroup;
 			children = (
-				33F486F52A9F90AB0046A522 /* Extensions */,
-				B228EA6A2880B30B00B35F16 /* Login.storyboard */,
-				33F486EE2A9F79D10046A522 /* Accounts */,
 				33F486ED2A9F79C90046A522 /* Login */,
+				33F486EE2A9F79D10046A522 /* Accounts */,
+				33F487002A9FB6AB0046A522 /* AccountDetail */,
+				33F486F52A9F90AB0046A522 /* Extensions */,
+				B228EA6A2880B30B00B35F16 /* Main.storyboard */,
 				B2CA46CB279350880041B3A5 /* AppDelegate.swift */,
 				B2CA46D42793508A0041B3A5 /* Assets.xcassets */,
 				B2CA46D62793508A0041B3A5 /* LaunchScreen.storyboard */,
@@ -166,6 +184,7 @@
 				B2CA47662794D69A0041B3A5 /* StubData.swift */,
 				33F486E82A9F74F80046A522 /* LoginViewModelTests.swift */,
 				33F486FC2A9FAD2E0046A522 /* AccountsViewModelTests.swift */,
+				339E5DF72AA0A63400F374BB /* AccountDetailViewModelTests.swift */,
 				B2CA47682794D6AC0041B3A5 /* ResponseJsons */,
 			);
 			path = MoneyBoxTests;
@@ -174,6 +193,7 @@
 		B2CA47682794D6AC0041B3A5 /* ResponseJsons */ = {
 			isa = PBXGroup;
 			children = (
+				339E5DF92AA0A8DE00F374BB /* Added10Pounds.json */,
 				B2CA47692794D6D70041B3A5 /* LoginSucceed.json */,
 				B2CA47B2279604A10041B3A5 /* Accounts.json */,
 			);
@@ -276,8 +296,9 @@
 			files = (
 				B2CA46D82793508A0041B3A5 /* LaunchScreen.storyboard in Resources */,
 				B2CA47712794D8E50041B3A5 /* LoginSucceed.json in Resources */,
+				339E5DFB2AA0AA3200F374BB /* Added10Pounds.json in Resources */,
 				B2CA46D52793508A0041B3A5 /* Assets.xcassets in Resources */,
-				B228EA6C2880B30B00B35F16 /* Login.storyboard in Resources */,
+				B228EA6C2880B30B00B35F16 /* Main.storyboard in Resources */,
 				B2CA47B42796052F0041B3A5 /* Accounts.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,11 +320,13 @@
 				33F486F02A9F7A310046A522 /* AccountsViewModel.swift in Sources */,
 				33F486F42A9F82110046A522 /* AccountTableViewCellModel.swift in Sources */,
 				B2CA46CC279350880041B3A5 /* AppDelegate.swift in Sources */,
+				33F487042A9FB9960046A522 /* AccountDetailViewModel.swift in Sources */,
 				B228EA6B2880B30B00B35F16 /* LoginViewController.swift in Sources */,
 				33F486F22A9F7FD40046A522 /* AccountTableViewCell.swift in Sources */,
 				33F486FB2A9FA45E0046A522 /* AccountsTableViewHeaderViewModel.swift in Sources */,
 				33F486F72A9F90C00046A522 /* Double+Currency.swift in Sources */,
 				33F486F92A9F9D170046A522 /* AccountsTableViewHeader.swift in Sources */,
+				33F487022A9FB6EB0046A522 /* AccountDetailViewController.swift in Sources */,
 				33F486E72A9F69550046A522 /* AccountsViewController.swift in Sources */,
 				33F486E52A9F63210046A522 /* LoginViewModel.swift in Sources */,
 			);
@@ -318,6 +341,7 @@
 				B2CA47672794D69A0041B3A5 /* StubData.swift in Sources */,
 				33F486FD2A9FAD2E0046A522 /* AccountsViewModelTests.swift in Sources */,
 				33F486EC2A9F761A0046A522 /* DataProviderMock.swift in Sources */,
+				339E5DF82AA0A63400F374BB /* AccountDetailViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,7 +418,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -449,7 +473,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -471,7 +495,7 @@
 				INFOPLIST_FILE = MoneyBox/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Login;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -500,7 +524,7 @@
 				INFOPLIST_FILE = MoneyBox/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Login;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;

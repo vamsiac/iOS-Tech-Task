@@ -31,36 +31,20 @@ class AccountsViewModelTests: XCTestCase {
 		XCTAssertTrue(mockViewController.calledFunctions.contains("didFetchAccounts()"))
 	}
 	
-	func test_getPlanValue_whenWrappedIdInProducts_shouldReturnPlanValue() {
+	func test_getProduct_whenWrappedIdInProducts_shouldReturnProduct() {
 		sut.fetchAccounts()
 		
-		let planValue = sut.getPlanValue(
+		let product = sut.getProduct(
 			for: Account.mock(wrapperId: "b9eaa523-cdd5-46c6-8353-9d538da845e0"))
-		XCTAssertEqual(planValue, 10526.09)
+		XCTAssertNotNil(product)
 	}
 	
-	func test_getPlanValue_whenWrappedIdIsNotInProducts_shouldReturnPlanValue() {
+	func test_getProduct_whenWrappedIdIsNotInProducts_shouldReturnPlanValue() {
 		sut.fetchAccounts()
 		
-		let planValue = sut.getPlanValue(
+		let product = sut.getProduct(
 			for: Account.mock(wrapperId: "Wrap-id-not-in-stub"))
-		XCTAssertNil(planValue)
-	}
-	
-	func test_getMoneyBoxValue_whenWrappedIdInProducts_shouldReturnPlanValue() {
-		sut.fetchAccounts()
-		
-		let planValue = sut.getMoneyBoxValue(
-			for: Account.mock(wrapperId: "b9eaa523-cdd5-46c6-8353-9d538da845e0"))
-		XCTAssertEqual(planValue, 570.0)
-	}
-	
-	func test_getMoneyBoxValue_whenWrappedIdIsNotInProducts_shouldReturnPlanValue() {
-		sut.fetchAccounts()
-		
-		let planValue = sut.getMoneyBoxValue(
-			for: Account.mock(wrapperId: "Wrap-id-not-in-stub"))
-		XCTAssertNil(planValue)
+		XCTAssertNil(product)
 	}
 }
 

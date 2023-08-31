@@ -16,15 +16,21 @@ A prototype wireframe of all 3 screens is provided as a guideline. You are free 
 ![](wireframe.png)
 
 ### What we are looking for
- - Demonstration of coding style, conventions and patterns.
- - Use of autolayout (preferably UIKit).
- - Implementation of unit tests.
+ - Demonstration of coding style, conventions and patterns.✅
+ - Use of autolayout (preferably UIKit).✅
+ - Implementation of unit tests.✅
  - Any accessibility feature would be a bonus.
- - The application must run on iOS 13 or later.
- - The application must compile and run on Xcode and be debugged in Xcode's iOS simulator.
- - Any 3rd party library should be integrated using Swift Package Manager.
- - No persistence of the user is required.
- - Showcase what you can do.
+ - The application must run on iOS 13 or later.✅
+ - The application must compile and run on Xcode and be debugged in Xcode's iOS simulator.✅
+ - Any 3rd party library should be integrated using Swift Package Manager. N/A
+ - No persistence of the user is required.✅
+ - Showcase what you can do.✅
+ 
+ ### Approach
+ - Used Xcode 14.2 to implement the features.
+ - All the view models are thoroughly tested.
+ - Want to use diffable datasources for tableView but decided not to make any changes in networking module. So used a traditional datasource approach.
+ - No external libraries are used.
 
 ### API Usage
 The Networking methods and Models for requests and responses are ready-made in the Networking module of the project.

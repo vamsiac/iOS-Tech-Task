@@ -19,7 +19,6 @@ class LoginViewModelTests: XCTestCase {
 		sut = LoginViewModel(
 			delegate: mockViewController,
 			dataProvider: DataProviderMock())
-		sut.delegate = mockViewController
 	}
 	
 	func test_startLogin_whenValidResponse_shouldCallUserSuccessfullyLoggedIn() {

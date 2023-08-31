@@ -52,3 +52,30 @@ extension Wrapper {
 			returns: nil)
 	}
 }
+
+extension ProductResponse {
+	static func mock() -> ProductResponse {
+		return ProductResponse(
+			id: 1,
+			assetBoxGlobalID: nil,
+			planValue: nil,
+			moneybox: nil,
+			subscriptionAmount: nil,
+			totalFees: nil,
+			isSelected: nil,
+			isFavourite: nil,
+			collectionDayMessage: nil,
+			wrapperID: nil,
+			isCashBox: nil,
+			pendingInstantBankTransferAmount: nil,
+			assetBox: nil,
+			product: nil,
+			investorAccount: nil,
+			personalisation: nil,
+			contributions: nil,
+			moneyboxCircle: nil,
+			isSwitchVisible: nil,
+			state: nil,
+			dateCreated: nil)
+	}
+}

@@ -37,10 +37,10 @@ class LoginViewController: UIViewController {
 
 extension LoginViewController: LoginViewModelDelegate {
 	func successfullyLoggedIn(with user: LoginResponse.User) {
-		let storyboard = UIStoryboard(name: "Login", bundle: nil)
+		let storyboard = UIStoryboard(name: "Main", bundle: nil)
 		let viewController = storyboard.instantiateViewController(withIdentifier: "AccountsViewController") as! AccountsViewController
 		viewController.firstName = user.firstName
-		self.navigationController?.pushViewController(viewController, animated: true)
+		view.window?.rootViewController = UINavigationController(rootViewController: viewController)
 	}
 	
 	func userFailedToLogin(with error: Error) {
@@ -48,6 +48,9 @@ extension LoginViewController: LoginViewModelDelegate {
 			title: "Login failed",
 			message: error.localizedDescription,
 			preferredStyle: .alert)
+		alertController.addAction(UIAlertAction(title: "Try again", style: .cancel, handler: { _ in
+			alertController.dismiss(animated: true)
+		}))
 		present(alertController, animated: true)
 	}
 }

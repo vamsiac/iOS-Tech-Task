@@ -23,6 +23,7 @@ class AccountTableViewCell: UITableViewCell {
 	override func awakeFromNib() {
 		super.awakeFromNib()
 		setup()
+		setupFonts()
 	}
 	
 	// MARK: Internal
@@ -35,5 +36,11 @@ class AccountTableViewCell: UITableViewCell {
 	// MARK: Private
 	private func setup() {
 		accessoryType = .disclosureIndicator
+	}
+	
+	private func setupFonts() {
+		nameLabel.font = UIFont.preferredFont(forTextStyle: .headline)
+		planLabel.font = UIFont.preferredFont(forTextStyle: .body)
+		moneyboxLabel.font = UIFont.preferredFont(forTextStyle: .body)
 	}
 }

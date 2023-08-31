@@ -26,6 +26,19 @@ class AccountsViewController: UIViewController {
 		title = viewModel.title
 		viewModel.fetchAccounts()
 	}
+	
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		guard let indexPath = tableView.indexPathForSelectedRow,
+			  let viewController = segue.destination as? AccountDetailViewController
+		else {
+			return
+		}
+
+		let account = viewModel.accounts[indexPath.row]
+		let product = viewModel.getProduct(for: account)
+		viewController.accountName = account.name
+		viewController.product = product
+	}
 }
 
 // MARK: - UITableViewDataSource -
@@ -43,10 +56,11 @@ extension AccountsViewController: UITableViewDataSource {
 		}
 		
 		let account = viewModel.accounts[indexPath.row]
+		let product = viewModel.getProduct(for: account)
 		let cellViewModel = AccountTableViewCellModel(
 			accountName: account.name,
-			planValue: viewModel.getPlanValue(for: account),
-			moneyboxValue: viewModel.getMoneyBoxValue(for: account))
+			planValue: product?.planValue,
+			moneyboxValue: product?.moneybox)
 		cell.configure(with: cellViewModel)
 		
 		return cell

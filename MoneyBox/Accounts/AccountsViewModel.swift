@@ -54,19 +54,11 @@ class AccountsViewModel {
 		}
 	}
 	
-	func getPlanValue(for account: Account) -> Double? {
-		guard let planValue = products.first(where: {$0.wrapperID == account.wrapper?.id})?.planValue else {
+	func getProduct(for account: Account) -> ProductResponse? {
+		guard let product = products.first(where: {$0.wrapperID == account.wrapper?.id}) else {
 			return nil
 		}
 		
-		return planValue
-	}
-	
-	func getMoneyBoxValue(for account: Account) -> Double? {
-		guard let moneyBox = products.first(where: {$0.wrapperID == account.wrapper?.id})?.moneybox else {
-			return nil
-		}
-		
-		return moneyBox
+		return product
 	}
 }
